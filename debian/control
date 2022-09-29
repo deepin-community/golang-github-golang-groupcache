@@ -1,0 +1,29 @@
+Source: golang-github-golang-groupcache
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Tim Potter <tpot@hpe.com>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+               golang-goprotobuf-dev
+Standards-Version: 4.1.1
+Homepage: https://github.com/golang/groupcache
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-golang-groupcache.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-golang-groupcache.git
+XS-Go-Import-Path: github.com/golang/groupcache
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-golang-groupcache-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-goprotobuf-dev
+Description: caching and cache-filling library, a replacement for memcached
+ Groupcache is a caching and cache-filling library, intended as a
+ replacement for memcached in many cases.
+ .
+ Like memcached, groupcache shards by key to select which peer is
+ responsible for that key.  Unlike memcached, groupcache does not
+ require running a separate set of servers, comes with a cache
+ filling mechanism, and contains some other useful features.
