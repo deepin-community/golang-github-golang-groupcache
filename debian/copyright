@@ -1,7 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: groupcache
 Source: https://github.com/golang/groupcache
-Files-Excluded: vendor Godeps/_workspace
 
 Files: *
 Copyright: 2012-2013 Google Inc.

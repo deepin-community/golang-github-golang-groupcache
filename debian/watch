@@ -1,5 +1,5 @@
-# uscan(1) configuration file.
-version=3
+version=4
 
- https://github.com/golang/groupcache/releases \
- .*/archive/v?(\d[\d\.]+)\.tar\.gz
+opts="mode=git, pgpmode=none" \
+https://github.com/golang/groupcache.git \
+HEAD
